@@ -4,7 +4,23 @@
 
 
 
-[TOC]
+- [Guía Básica Git](#gu-a-b-sica-git)
+  * [CONFIGURACIONES INICIALES](#configuraciones-iniciales)
+  * [INICIALIZAR REPOSITORIO](#inicializar-repositorio)
+  * [AGREGAR ORIGEN DE REPOSITORIO](#agregar-origen-de-repositorio)
+  * [AGREGAR, MODIFICAR Y CONFIRMAR CAMBIOS](#agregar--modificar-y-confirmar-cambios)
+  * [HISTORIAL DE COMMITS](#historial-de-commits)
+  * [VIAJES EN EL TIEMPO](#viajes-en-el-tiempo)
+  * [CAMBIAR NOMBRES DE ARCHIVOS CON GIT](#cambiar-nombres-de-archivos-con-git)
+  * [IGNORANDO ARCHIVO (.gitignore)](#ignorando-archivo--gitignore-)
+  * [RAMAS](#ramas)
+  * [TAGS Y ETIQUETAS](#tags-y-etiquetas)
+  * [GIT STASH](#git-stash)
+  * [EMPUJANDO LOS CAMBIOS](#empujando-los-cambios)
+  * [GIT PULL Y GIT FETCH](#git-pull-y-git-fetch)
+  * [ERROR AL AGREGAR ARCHIVOS](#error-al-agregar-archivos)
+
+
 
 ## CONFIGURACIONES INICIALES
 
