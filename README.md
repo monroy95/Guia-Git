@@ -176,7 +176,7 @@ Luego agregados todos los archivos, podemos comprometerlos, la bandera -a (para 
 git commit -am "Mi Primer Commit"ogit commit -m "Mi Primer Commit" (Recomendado)ogit commit
 ```
 
-Si solamente utilizar el comando `**git commit**` se abrirá un editor vim allí puedes editar tu mensaje.
+Si solamente utilizar el comando `git commit` se abrirá un editor vim allí puedes editar tu mensaje.
 
 Si por alguna razón cometes un error en el mensaje del commit, no hay problema esto se puede resolver con el siguiente comando que permite modificar el mensaje del commit.
 
@@ -233,6 +233,8 @@ git reset --hard [número-hash]
 ```
 
 Esta opción nos permite restaurar hacia un punto en específico, descartando todos los cambios que hayamos hecho después de ese commit.
+
+
 
 Para recuperar los últimos cambios realizados tras un posible error o pérdida de código puede ejecutar lo siguiente comando, este permite recuperar la información del último commit registrado.
 
@@ -395,7 +397,11 @@ git stash save "Mensaje"
 Ver informacion de los stash.
 
 ```
-git stash listgit stash list --statgit stash show
+git stash list
+
+git stash list --stat
+
+git stash show
 ```
 
 Recuperar un stash, esto extrae el último stash registrado con sus respectivos datos, cuando se ejecuta recupera el último stash y lo elimina, como si fuera de una pila.
@@ -407,13 +413,21 @@ git stash pop
 Tambien podemos utilizar apply.
 
 ```
-git stash applyogit stash apply [hash]
+git stash apply
+
+o
+
+git stash apply [hash]
 ```
 
 Si ya no vamos a utilizar un stash, hay que eliminarlo! Después de esto hay que verificarlo viendo el listado usando cualquiera de los comandos anteriores.
 
 ```
-git stash dropogit stash drop [hash]
+git stash drop
+
+o
+
+git stash drop [hash]
 ```
 
 ## EMPUJANDO LOS CAMBIOS
@@ -447,7 +461,15 @@ git push --tags
 Git pull nos permite sincronizar los cambios remotos con los cambios locales, cuando se utiliza git pull este automaticamente hacer merge los cambios remotos con los datos que tengamos en local.
 
 ```
-git pull origin masterogit pully en caso no funcionen los comandos anterioresgit pull --all
+git pull origin master
+
+o
+
+git pull
+
+y en caso no funcionen los comandos anteriores
+
+git pull --all
 ```
 
 Git Fetch nos permite actualizar nuestro repositorio local con los cambios realizados en el repositorio remoto.
@@ -459,7 +481,9 @@ git fetch
 Para ver los cambios, actualizaciones de un repositorio forkeado de algun compañero podemos utilizar.
 
 ```
-git remote add upstream <repositorio_original>git fetch upstream
+git remote add upstream <repositorio_original>
+
+git fetch upstream
 ```
 
 ## ERROR AL AGREGAR ARCHIVOS
@@ -471,3 +495,4 @@ rm -f ./.git/index.lock
 ```
 
 Esto eliminará de forma forzada el archivo index.lock lo cual provoca el error.
+
